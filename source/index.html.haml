@@ -1,9 +1,0 @@
----
-title: Welcome to Middleman
----
-.hgroup.collapse
-  %h1= current_page.data.title
-
-%section.margins
-  - sitemap.resources.select { |resource| resource.path =~ /^sections\// }.each do |resource|
-    %h2.question= resource.data.title
