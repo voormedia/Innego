@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Jarivdberg/innego # Path to your GitHub repository
+  repo: Voormedia/innego # Path to your GitHub repository
   branch: preview # Branch to update (master by default)
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
