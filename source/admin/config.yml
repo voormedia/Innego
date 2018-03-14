@@ -16,18 +16,4 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Intro, name: intro, widget: text}
           - {label: Contact me text, name: cta-text, widget: text}
           - {label: Background image, name: background, widget: image}
-      - label: "Services"
-        name: "services"
-        file: "source/content/services.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - label: Services
-            name: services
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: text}
-              - {label: Image, name: image, widget: image}
-
 
