@@ -1,6 +1,7 @@
-%section
-  %h1= current_page.data.title
-  - sitemap.resources.select { |resource| resource.path =~ /^sections\// }.each do |resource|
-    %h2.question= resource.data.title
+- sitemap.resources.select { |resource| resource.path =~ /^sections\// }.each do |resource|
+  %section{style: "background-image: url('" + resource.data["hero-background"] + "');"}
+    %h1.question= resource.data.title
+    %h2.question= resource.data["sub-title"]
+    %p= resource.data["contact-me-text"]
 
 

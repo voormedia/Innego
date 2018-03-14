@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Sub title", name: "sub-title", widget: "text"}
       - {label: "Contact me text", name: "contact-me-text", widget: string, default: "Contact me"}
-      - {label: "Background image", name: "hero-background", widget: image}
+      - {label: "Background image", name: "hero-background", widget: image, required: false}
       # - label: "Services"
       #   name: "services"
       #   widget: "list"

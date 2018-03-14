@@ -11,6 +11,9 @@ set :haml, { :format => :html5 }
 # Activate livereload
 activate :livereload
 
+# Activate pry
+activate :pry
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
