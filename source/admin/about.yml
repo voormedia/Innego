@@ -1,5 +1,0 @@
-- label: About
-  name: about
-  widget: list
-  fields:
-    - {label: Aboutme, name: about, widget: string}
