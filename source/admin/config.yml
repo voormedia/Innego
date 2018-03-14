@@ -74,7 +74,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Image, name: image, widget: image}
       - label: "Hero section"
         name: "hero"
-        file: "contents/dkfjlkdsjflds.yml"
+        file: "contents/hero.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
