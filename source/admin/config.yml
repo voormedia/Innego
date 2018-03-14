@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Voormedia/innego # Path to your GitHub repository
-  branch: preview # Branch to update (master by default)
+  branch: main # Branch to update (master by default)
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
