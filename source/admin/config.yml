@@ -8,22 +8,39 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Sections"
     name: "sections"
     files:
-      - label: "Hero section"
-        name: "hero"
-        file: "source/content/hero.yml"
+      - label: "Contact"
+        name: "contact"
+        file: "source/content/contact.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Company name, name: company-name, widget: string}
+          - {label: Company address, name: company-address, widget: markdown}
+          - {label: Phone number, name: phone, widget: string}
+          - {label: Email address, name: email, widget: string}
+      - label: "References"
+        name: "references"
+        file: "source/content/references.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - {label: Contact me text, name: cta-text, widget: text}
-          - {label: Background image, name: background, widget: image}
-      - label: "Services"
-        name: "services"
-        file: "source/content/services.yml"
+          - label: Reference
+            name: reference
+            widget: list
+            fields:
+              - {label: Content, name: content, widget: text}
+              - {label: Author name, name: author-name, widget: string}
+              - {label: Author title, name: author-title, widget: string}
+              - {label: Author image, name: author-image, widget: image}
+              - {label: Author logotype, name: author-logo, widget: image}
+              - {label: Background image, name: background-image, widget: image}
+      - label: "Projects"
+        name: "projects"
+        file: "source/content/projects.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - label: Service
-            name: service
+          - label: Project
+            name: project
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
@@ -41,41 +58,24 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Reference image, name: reference-image, widget: image}
           - {label: Reference author, name: reference-author, widget: text}
           - {label: Reference author title, name: reference-author-title, widget: text}
-      - label: "Projects"
-        name: "projects"
-        file: "source/content/projects.yml"
+      - label: "Services"
+        name: "services"
+        file: "source/content/services.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - label: Project
-            name: project
+          - label: Service
+            name: service
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
               - {label: Content, name: content, widget: text}
               - {label: Image, name: image, widget: image}
-      - label: "References"
-        name: "references"
-        file: "source/content/references.yml"
+      - label: "Hero section"
+        name: "hero"
+        file: "source/content/hero.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - label: Reference
-            name: reference
-            widget: list
-            fields:
-              - {label: Content, name: content, widget: text}
-              - {label: Author name, name: author-name, widget: string}
-              - {label: Author title, name: author-title, widget: string}
-              - {label: Author image, name: author-image, widget: image}
-              - {label: Author logotype, name: author-logo, widget: image}
-              - {label: Background image, name: background-image, widget: image}
-      - label: "Contact"
-        name: "contact"
-        file: "source/content/contact.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Company name, name: company-name, widget: string}
-          - {label: Company address, name: company-address, widget: markdown}
-          - {label: Phone number, name: phone, widget: string}
-          - {label: Email address, name: email, widget: string}
+          - {label: Contact me text, name: cta-text, widget: text}
+          - {label: Background image, name: background, widget: image}
