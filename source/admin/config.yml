@@ -10,7 +10,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "About Page"
         name: "about"
-        file: "innego/contents/site/content/about.yml"
+        file: "innego/source/admin/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Photo, name: photo, widget: image}
       - label: "Locations Page"
         name: "locations"
-        file: "innego/contents/site/content/locations.yml"
+        file: "innego/source/admin/locations.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
