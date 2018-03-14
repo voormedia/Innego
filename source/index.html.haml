@@ -1,13 +1,13 @@
-- sitemap.resources.select { |resource| resource.path =~ /^sections\// }.each do |resource|
-  %section{style: "background-image: url('" + resource.data["hero-background"] + "');"}
-    %h1.question= resource.data.title
-    %h2.question= resource.data["sub-title"]
-    %p= resource.data["contact-me-text"]
+/ - sitemap.resources.select { |resource| resource.path =~ /^sections\// }.each do |resource|
+/   %section{style: "background-image: url('" + resource.data["hero-background"] + "');"}
+/     %h1.question= resource.data.title
+/     %h2.question= resource.data["sub-title"]
+/     %p= resource.data["contact-me-text"]
 
-- resource = sitemap.resources.select { |resource| resource.path =~ /^projects\// }.first
-%section{style: "background-image: url('" + resource.data["hero-background"] + "');"}
-  %h1.question= resource.data.title
-  %h2.question= resource.data["sub-title"]
-  %p= resource.data["contact-me-text"]
+/ - resource = sitemap.resources.select { |resource| resource.path =~ /^projects\// }.first
+/ %section{style: "background-image: url('" + resource.data["hero-background"] + "');"}
+/   %h1.question= resource.data.title
+/   %h2.question= resource.data["sub-title"]
+/   %p= resource.data["contact-me-text"]
 
 
