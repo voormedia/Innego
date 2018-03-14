@@ -5,15 +5,31 @@ backend:
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
-  - label: "Sections"
-    name: "sections"
+  - label: "Pages"
+    name: "pages"
     files:
-      - label: "Hero section"
-        name: "hero"
-        file: "source/content/hero.yml"
+      - label: "About Page"
+        name: "about"
+        file: "source/content/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - {label: Contact me text, name: cta-text, widget: text}
-          - {label: Background image, name: background, widget: image}
-
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Locations Page"
+        name: "locations"
+        file: "source/content/locations.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
