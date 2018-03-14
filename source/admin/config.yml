@@ -17,6 +17,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Company address, name: company-address, widget: markdown}
           - {label: Phone number, name: phone, widget: string}
           - {label: Email address, name: email, widget: string}
+          - {label: Background image, name: background, widget: image}
       - label: "References"
         name: "references"
         file: "source/content/references.yml"
@@ -54,10 +55,10 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Intro, name: intro, widget: text}
           - {label: Content, name: content, widget: markdown}
           - {label: Large image, name: largeimg, widget: image}
-          - {label: Reference text, name: reference-text, widget: text}
-          - {label: Reference image, name: reference-image, widget: image}
-          - {label: Reference author, name: reference-author, widget: text}
-          - {label: Reference author title, name: reference-author-title, widget: text}
+          - {label: Reference text, name: reference-text, widget: text, required: false}
+          - {label: Reference image, name: reference-image, widget: image, required: false}
+          - {label: Reference author, name: reference-author, widget: text, required: false}
+          - {label: Reference author title, name: reference-author-title, widget: text, required: false}
       - label: "Services"
         name: "services"
         file: "source/content/services.yml"
@@ -77,5 +78,5 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - {label: Contact me text, name: cta-text, widget: text}
+          - {label: Button text, name: cta-text, widget: string}
           - {label: Background image, name: background, widget: image}
