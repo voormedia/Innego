@@ -8,6 +8,9 @@ end
 # Set specific Template Languages
 set :haml, { :format => :html5 }
 
+# Activate livereload
+activate :livereload
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
