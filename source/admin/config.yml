@@ -24,7 +24,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: Projects
         name: projects
         widget: list
-        types:
+        fields:
           - label: Project
             name: project
             fields:
@@ -33,15 +33,6 @@ collections: # A list of collections the CMS should be able to edit
               - label: Content
                 name: content
                 widget: text
-          - label: Team Section
-            name: team-section
-            fields:
-              - label: People
-                name: people
-                widget: list
-                fields:
-                  - label: Name
-                    name: name
       # - label: "Services"
       #   name: "services"
       #   widget: "list"
