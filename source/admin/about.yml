@@ -1,4 +1,4 @@
-label: About
+- label: About
   name: about
   widget: list
   fields:
