@@ -10,7 +10,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Contact"
         name: "contact"
-        file: "source/content/contact.yml"
+        file: "source/content/contact.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Company name, name: company-name, widget: string}
@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Background image, name: background, widget: image}
       - label: "References"
         name: "references"
-        file: "source/content/references.yml"
+        file: "source/content/references.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
@@ -36,7 +36,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Background image, name: background-image, widget: image}
       - label: "Projects"
         name: "projects"
-        file: "source/content/projects.yml"
+        file: "source/content/projects.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
@@ -49,7 +49,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Image, name: image, widget: image}
       - label: "About"
         name: "about"
-        file: "source/content/about.yml"
+        file: "source/content/about.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
@@ -61,7 +61,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Reference author title, name: reference-author-title, widget: text, required: false}
       - label: "Services"
         name: "services"
-        file: "source/content/services.yml"
+        file: "source/content/services.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
@@ -74,7 +74,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Image, name: image, widget: image}
       - label: "Hero section"
         name: "hero"
-        folder: "source/content/hero.yml"
+        folder: "source/content/hero.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
