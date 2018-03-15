@@ -9,11 +9,11 @@
   .page-width
     %h2= data.services.title
     %p.subtitle=data.services.intro
-
-    - data.services.service.each do |s|
-      .service
-        %h3= s.title
-        %p= s.content
+    .cards
+      - data.services.service.each do |s|
+        .service.card
+          %h3= s.title
+          %p= s.content
 
 %section{:id => data.about.title}
   .page-width

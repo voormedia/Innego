@@ -1,0 +1,17 @@
+.cards {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 5%;
+  @media (min-width: $desktop) {
+    grid-template-columns: 30% 30% 30%;
+  }
+
+  .card {
+    padding: 3.5rem;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 25px 0 rgba(0,0,0,0.02);
+  }
+}
+
+
