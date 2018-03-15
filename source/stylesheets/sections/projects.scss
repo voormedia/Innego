@@ -1,6 +1,7 @@
 section.projects {
   background: linear-gradient(352deg, #FFFFFF 0%, #F4F4F4 100%);
   text-align: center;
+  padding-top: 14rem;
 
   .subtitle {
     margin-left: auto;
@@ -13,11 +14,30 @@ section.projects {
     justify-content: space-between;
 
     .project {
-      width: 47%;
+      display: flex;
+      width: 48%;
       text-align: left;
       border-radius: 0.3rem;
       background: $white-color;
       border-bottom: 0.4rem solid $secondary-color;
+      margin-bottom: 4%;
+      box-shadow: 12px 12px 24px 0 rgba(0,0,0,0.08);
+      overflow: hidden;
+
+      .content {
+        padding: 2.7rem;
+        flex: 1 0 50.5%;
+      }
+
+      .image {
+        image-size: cover;
+        image-position: center center;
+        flex: 1 0 49.5%;
+      }
+
+      h4 {
+        margin: 0 0 1rem 0;
+      }
     }
   }
 }
