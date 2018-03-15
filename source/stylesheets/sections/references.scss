@@ -1,6 +1,21 @@
 section.references {
   background: linear-gradient(352deg, #FFFFFF 0%, #F4F4F4 100%);
   .card {
-    border-radius: 0.3rem;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    padding: 0;
+    .card-header {
+      padding: 4rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 23rem;
+      box-sizing: border-box;
+      blockquote {
+        color: white;
+      }
+    }
+    .card-body {
+      height: 21rem;
+    }
   }
 }
