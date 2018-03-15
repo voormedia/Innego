@@ -14,8 +14,9 @@
         .service.card
           %h3= s.title
           %p= s.intro
-          %a.readmore{href: "#"}
-            Lees Meer
+          = partial "layouts/components/popup",:locals => { :service => s }
+          -# %a.readmore{href: "#"}
+          -#   Lees Meer
 
 %section{:id => data.about.title}
   .page-width
