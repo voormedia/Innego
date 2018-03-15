@@ -19,16 +19,40 @@ section.contact {
     .contact-details {
       padding: 5rem 6.4rem;
       width: 60%;
-      .company {
-        font-family: "Museo700";
-        font-size: 2rem;
+      h3 {
+        font-size: 2.6rem;
+      }
+      .details {
+        display: flex;
+        .company-details {
+          max-width: 23rem;
+          .company {
+            font-family: "Museo700";
+            font-size: 2rem;
+          }
+          .address {
+
+          }
+          .phone {
+            font-family: "Museo700";
+            color: $primary-color;
+            margin-bottom: 0.5rem;
+          }
+          .email {
+            font-family: "Museo700";
+            color: $secondary-color;
+          }
+        }
       }
     }
     .contact-form {
       padding: 5rem 6.4rem;
       width: 40%;
-
       background: linear-gradient(153.42deg, #E9E9E9 0%, #C1C1C1 100%);
+      textarea {
+        height: 9rem;
+        margin-bottom: 1.6rem;
+      }
     }
   }
 }

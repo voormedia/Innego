@@ -72,17 +72,20 @@
     .contact-container
       .contact-details
         %h3= data.contact.title
-        %p.company= data.contact["company-name"]
-        %p= data.contact["company-address"]
-        %p= data.contact["phone"]
-        %p= data.contact["email"]
+        .details
+          .company-details
+            %p.company= data.contact["company-name"]
+            %p.address= data.contact["company-address"]
+            %p.phone= data.contact["phone"]
+            %p.email= data.contact["email"]
+          .linkedin
       .contact-form
         %form
           %input{type: "text", placeholder: "Naam", name: "name"}
           %input{type: "email", placeholder: "Email adres", name: "email"}
-          %input{type: "number", placeholder: "Telefoonnummer", name: "number"}
+          %input{type: "tel", placeholder: "Telefoonnummer", name: "number"}
           %textarea{placeholder: "Bericht", name: "bericht"}
-          %button{type: "submit"}
+          %button.success{type: "submit"}
             Verstuur bericht
 
 

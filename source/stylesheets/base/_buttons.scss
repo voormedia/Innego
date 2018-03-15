@@ -1,0 +1,18 @@
+button {
+  border: 0;
+  height: 4.4rem;
+  width: 32.5rem;
+  border-radius: 0.3rem;
+  font-family: "Museo700";
+  font-size: 1.6rem;
+  line-height: 4.4rem;
+  cursor: pointer;
+  &.success {
+    color: white;
+    background-color: $primary-color;
+    box-shadow: 0 0.3rem 0 0 #6EAD62;
+    &:hover {
+      background-color: darken($primary-color, 7);
+    }
+  }
+}

@@ -18,6 +18,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Phone number, name: phone, widget: string}
           - {label: Email address, name: email, widget: string}
           - {label: Background image, name: background, widget: image}
+          - {label: Matthijs linkedin avatar, name: avatar, widget: image}
+          - {label: Matthijs job description, name: job-description, widget: string}
       - label: "References"
         name: "references"
         file: "data/references.yml"
