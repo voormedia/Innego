@@ -23,15 +23,19 @@
 
 %section.about{:id => data.about.title}
   .left
-    %h2= data.about.title
-    %p.subtitle= data.about.intro
-    = data.about.content
+    .content
+      %h2= data.about.title
+      %p.subtitle= data.about.intro
+      - data.about.content.each do |content|
+        %h3= content.title
+        %p= content.content
   .right{:style => "background-image: url('#{data.about.largeimg.sub("/source", "")}')"}
     .reference
-      %img{:src => data.about["reference-image"].sub("/source", "")}
-      %p= data.about["reference-text"]
-      %span= data.about["reference-author"]
-      %span= data.about["reference-author-title"]
+      .author-img{:style => "background-image: url('#{data.about["reference-image"].sub("/source", "")}')"}
+      .content
+        %p= data.about["reference-text"]
+        %span.name= data.about["reference-author"]
+        %span.title= data.about["reference-author-title"]
 
 %section.projects{:id => data.projects.title}
   .page-width
