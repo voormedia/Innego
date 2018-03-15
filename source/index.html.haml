@@ -3,7 +3,12 @@
     .content
       %h1= data.hero.title
       %p.subtitle= data.hero.intro
-      %span.cta= data.hero["cta-text"]
+      %a.cta{:href => "#contact"}= data.hero["cta-text"]
+  .scroll-down
+    .mouse
+      .scroll-wheel
+    .arrow-down
+    .arrow-down
 
 %section.services{:id => data.services.title}
   .page-width

@@ -2,19 +2,22 @@
   height: 70vh;
   color: $white-color;
   position: relative;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   display: flex;
+  background-size: cover;
+  background-position: center center;
+  max-height: 900px;
+  min-height: 500px;
 
   .page-width {
     position: relative;
     z-index: 100;
     align-items: center;
     display: flex;
+    width: 100%;
 
     .content {
       margin-left: auto;
-      width: 45%;
+      width: 48%;
     }
 
     .subtitle {
@@ -23,7 +26,8 @@
   }
 
   h1,
-  p {
+  p,
+  a {
     color: $white-color;
   }
 
@@ -40,13 +44,95 @@
 
   .cta {
     padding: 1.1rem 2.5rem;
-    border: 2px solid $white-color;
+    border: 0.2rem solid $white-color;
     border-radius: 0.2rem;
     font-size: 1.8rem;
     cursor: pointer;
     font-family: $header-font;
     font-weight: 700;
-    margin-top: 1.5rem;
+    margin-top: -1.5rem;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #fff;
+      opacity: 0.1;
+      top: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:before {
+      left: -100%;
+    }
+
+    &:after {
+      right: -100%;
+    }
+
+    &:hover:before {
+      left: 0;
+    }
+
+    &:hover:after {
+      right: 0;
+    }
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 5rem;
+  width: 2.2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+
+  .mouse {
+    border: 0.2rem solid $white-color;
+    height: 4.6rem;
+    border-radius: 3.5rem;
+    width: 100%;
+
+    .scroll-wheel {
+      border-radius: 100%;
+      background: $white-color;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin: 1rem auto;
+      animation: scroll-wheel 1.5s infinite 2s;
+    }
+
+    @keyframes scroll-wheel {
+        0% {
+          margin-top: 1rem;
+          opacity: 1;
+        }
+
+        80% {
+          opacity: 1;
+        }
+
+        100% {
+          margin-top: 3rem;
+          opacity: 0;
+        }
+    }
+  }
+
+  .arrow-down {
+    border-left: 0.2rem solid $white-color;
+    border-bottom: 0.2rem solid $white-color;
+    transform: rotate(-45deg);
+    margin-top: -0.35rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 0.3rem;
   }
 }

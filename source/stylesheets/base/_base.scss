@@ -16,5 +16,7 @@ body {
   font-size: 1.4rem;
   font-family: $base-font-family;
   line-height: 2.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
