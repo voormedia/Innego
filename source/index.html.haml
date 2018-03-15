@@ -16,12 +16,10 @@
     %p.subtitle=data.services.intro
     .cards
       - data.services.service.each do |s|
-        .service.card
+        .service.card{:style => "background-image: url('#{s.image.sub("/source", "")}')"}
           %h3= s.title
           %p= s.intro
           = partial "layouts/components/popup",:locals => { :service => s }
-          -# %a.readmore{href: "#"}
-          -#   Lees Meer
 
 %section.about{:id => data.about.title}
   .left
