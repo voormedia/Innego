@@ -15,7 +15,7 @@ service:
       Tijdens de Lean Six Sigma Black Belt Opleiding krijgt u de nodige bagage
       om zelfstandig (grotere) verbeterinitiatieven uit te voeren en Green Belts
       te begeleiden in verbetertrajecten.
-    image: /images/uploads/screen shot 2018-03-13 at 3.25.38 pm.png
+    image: /source/images/uploads/sigma.png
     title: Black belt lean six sigma
     intro: >-
       Tijdens de Lean Six Sigma Black Belt Opleiding krijgt u de nodige bagage
@@ -33,7 +33,7 @@ service:
       Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
       Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    image: /images/uploads/screen shot 2018-03-13 at 3.25.38 pm.png
+    image: /source/images/uploads/kaizen.png
     title: TPM/Kaizen Effectiveness
     intro: >-
       Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
@@ -51,7 +51,7 @@ service:
       Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
       Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    image: /images/uploads/screen shot 2018-03-13 at 3.25.38 pm.png
+    image: /source/images/uploads/management.png
     title: Organisatieadvies en management
     intro: >-
       Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
