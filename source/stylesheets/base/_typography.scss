@@ -1,0 +1,76 @@
+h1 {
+  margin: 0 0 2rem;
+  color: $base-font-color;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 5.2rem;
+  font-weight: 800;
+  line-height: 5.8rem;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  margin: 0 0 3rem;
+  color: $base-font-color;
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 4.4rem;
+  font-weight: 800;
+  line-height: 4rem;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  margin: 0 0 1.6rem;
+  font-family: #000000;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+
+// h4 {
+//   margin: 0 0 0.8rem;
+//   font-size: 1.5rem;
+
+//   .content & {
+//     margin-top: 1.5rem;
+//   }
+// }
+
+// h5 {
+//   margin: 0 0 0.8rem;
+//   font-size: 1.4rem;
+
+//   .content & {
+//     margin-top: 1.5rem;
+//   }
+// }
+
+// h1, h2, h3, h4, h5 {
+//   i {
+//     position: relative;
+//     top: 0.3rem;
+//     font-family: $icon-font;
+//     font-size: 2rem;
+//     font-style: normal;
+//   }
+// }
+
+p {
+  margin: 0 0 1.6rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  &.subtitle {
+    color: $primary-color;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+}
+
+// .center {
+//   text-align: center;
+// }
+
+

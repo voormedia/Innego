@@ -1,13 +1,13 @@
 %section{:style => "background-image: url('#{data.hero.background}')"}
   .page-width
     %h1= data.hero.title
-    %p=data.hero.intro
+    %p.subtitle=data.hero.intro
     %span.cta=data.hero["cta-text"]
 
 %section{:id => data.services.title}
   .page-width
     %h2= data.services.title
-    %p=data.services.intro
+    %p.subtitle=data.services.intro
 
     - data.services.service.each do |s|
       .service
@@ -18,19 +18,20 @@
   .page-width
     %div
       %h2= data.about.title
-      %p= data.about.intro
-      %p= data.about.content
+      %p.subtitle= data.about.intro
+      %p= data.about.content2
     %div{:style => "background-image: url('#{data.about.largeimg}')"}
       .reference
+        = image_tag "banner1.jpg"
         %img{:src => data.about["reference-image"]}
-        = data.about["reference-text"]
+        %p= data.about["reference-text"]
         %span= data.about["reference-author"]
         %span= data.about["reference-author-title"]
 
 %section{:id => data.projects.title}
   .page-width
     %h2= data.projects.title
-    %p=data.projects.intro
+    %p.subtitle=data.projects.intro
 
     - data.projects.project.each do |project|
       .project
@@ -42,7 +43,7 @@
 %section{:id => data.references.title}
   .page-width
     %h2= data.references.title
-    %p= data.references.intro
+    %p.subtitle= data.references.intro
 
     - data.references.reference.each do |r|
       .project
