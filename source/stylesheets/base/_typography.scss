@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   margin: 0 0 1.6rem;
-  font-family: "Museo300";
+  font-family: "Museo700";
   color: #000000;
   font-weight: 600;
   font-size: 3rem;
@@ -44,10 +44,12 @@ p {
   line-height: 2.2rem;
   font-family: "Museo300";
   &.subtitle {
+    max-width: 80rem;
     color: $primary-color;
     font-weight: 300;
     font-size: 2.4rem;
     line-height: 2.9rem;
+    margin-bottom: 5rem;
   }
 }
 
