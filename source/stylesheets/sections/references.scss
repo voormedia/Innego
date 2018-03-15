@@ -30,7 +30,7 @@ section.references {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 7rem 1rem 3.5rem;
+      padding: 7rem 1rem 2.8rem;
       .avatar {
         height: 9.5rem;
         width: 9.5rem;
@@ -48,6 +48,15 @@ section.references {
       }
       .author-title {
         color: $secondary-color;
+        margin-bottom: 1rem;
+      }
+      .author-logo {
+        max-width: 20rem;
+        height: 5.6rem;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
       }
     }
   }
