@@ -3,7 +3,7 @@ intro: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien arcu,
   dignissim vitae faucibus vel, dictum non dolor.
 content:
-  - title: Een proces in het kort
+  - title: 1. Een proces in het kort
     content: >-
       Producten of diensten die u levert zijn het resultaat van uw organisatie.
       Het resultaat van een reeks aan activiteiten die in een bepaalde volgorde
@@ -22,7 +22,7 @@ content:
 
 
       De klant is diegene die al dan niet gebruik maakt van uw procesresultaat. 
-  - title: Signalen tot verbetering
+  - title: 2. Signalen tot verbetering
     content: >-
       Je gaat een proces pas verbeteren als je het signaal krijgt dat het niet
       meer
