@@ -24,12 +24,36 @@ service:
   - content: >-
       Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
       Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+
+      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
+      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
+      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     image: /images/uploads/screen shot 2018-03-13 at 3.25.38 pm.png
     title: TPM/Kaizen Effectiveness
+    intro: >-
+      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
+      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   - content: >-
+      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
+      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
+      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
       Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
       Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     image: /images/uploads/screen shot 2018-03-13 at 3.25.38 pm.png
     title: Organisatieadvies en management
+    intro: >-
+      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
+      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
