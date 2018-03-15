@@ -41,13 +41,13 @@
   .page-width
     %h2= data.projects.title
     %p.subtitle=data.projects.intro
-
-    - data.projects.project.each do |project|
-      .project
-        %div
-          %h4= project.title
-          %p= project.content
-        %div{:style => "background-image: url('#{project.image}')"}
+    .projects
+      - data.projects.project.each do |project|
+        .project
+          %div
+            %h4= project.title
+            %p= project.content
+          %div{:style => "background-image: url('#{project.image}')"}
 
 %section.references{:id => data.references.title}
   .page-width
