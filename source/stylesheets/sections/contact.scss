@@ -1,0 +1,34 @@
+section.contact {
+  padding-top: 13.8rem;
+  padding-bottom: 12.5rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(160.64deg, #10314E 0%, #35632C 100%);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+  }
+  .contact-container {
+    display: flex;
+    background: white;
+    .contact-details {
+      padding: 5rem 6.4rem;
+      width: 60%;
+      .company {
+        font-family: "Museo700";
+        font-size: 2rem;
+      }
+    }
+    .contact-form {
+      padding: 5rem 6.4rem;
+      width: 40%;
+
+      background: linear-gradient(153.42deg, #E9E9E9 0%, #C1C1C1 100%);
+    }
+  }
+}

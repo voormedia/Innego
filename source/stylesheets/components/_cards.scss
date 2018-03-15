@@ -7,10 +7,14 @@
   }
 
   .card {
+    margin-top: 2rem;
     padding: 3.5rem;
     border-radius: 2px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 25px 0 rgba(0,0,0,0.02);
+    @media (min-width: $desktop) {
+      margin-top: 0;
+    }
   }
 }
 

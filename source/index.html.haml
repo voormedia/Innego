@@ -66,6 +66,29 @@
             %p.author-title= r["author-title"]
             .author-logo{:style => "background-image: url('#{r["author-logo"].sub("/source", "")}')"}
 
+%section.contact{:id => data.contact.title, :style => "background-image: url('#{data.contact["background"].sub("/source", "")}')"}
+  .overlay
+  .page-width
+    .contact-container
+      .contact-details
+        %h3= data.contact.title
+        %p.company= data.contact["company-name"]
+        %p= data.contact["company-address"]
+        %p= data.contact["phone"]
+        %p= data.contact["email"]
+      .contact-form
+        %form
+          %input{type: "text", placeholder: "Naam", name: "name"}
+          %input{type: "email", placeholder: "Email adres", name: "email"}
+          %input{type: "number", placeholder: "Telefoonnummer", name: "number"}
+          %textarea{placeholder: "Bericht", name: "bericht"}
+          %button{type: "submit"}
+            Verstuur bericht
+
+
+
+
+
 
 
 
