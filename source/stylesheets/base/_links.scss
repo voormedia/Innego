@@ -1,0 +1,10 @@
+a {
+  color: $primary-color;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  font-family: "Museo500";
+  &:hover {
+    color: darken($primary-color, 10);
+  }
+}
