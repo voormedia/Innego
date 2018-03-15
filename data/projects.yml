@@ -1,0 +1,29 @@
+title: Projecten
+intro: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien arcu,
+  dignissim vitae faucibus vel, dictum non dolor.
+project:
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat
+      iaculis magna eu facilisis. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Lorem ipsum dolor sit amet.
+    image: /images/uploads/banner1.jpg
+    title: iPM Partners
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat
+      iaculis magna eu facilisis. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Lorem ipsum dolor sit amet.
+    image: /images/uploads/banner1.jpg
+    title: Friesland Campina
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat
+      iaculis magna eu facilisis. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Lorem ipsum dolor sit amet.
+    image: /images/uploads/banner1.jpg
+    title: Owens Corning
+  - content: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat
+      iaculis magna eu facilisis. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Lorem ipsum dolor sit amet.
+    image: /images/uploads/banner1.jpg
+    title: Mars Inc.
