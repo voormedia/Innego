@@ -5,17 +5,50 @@ section.references {
     border-radius: 0.4rem;
     padding: 0;
     .card-header {
+      position: relative;
       padding: 4rem;
       background-size: cover;
       background-repeat: no-repeat;
       height: 23rem;
       box-sizing: border-box;
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(160.64deg, #10314E 0%, #35632C 100%);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+      }
       blockquote {
+        position: relative;
         color: white;
       }
     }
     .card-body {
-      height: 21rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7rem 1rem 3.5rem;
+      .avatar {
+        height: 9.5rem;
+        width: 9.5rem;
+        background-size: cover;
+        border-radius: 50%;
+        border: 0.8rem solid white;
+        margin: 0 auto;
+        position: absolute;
+        top: -5.5rem;
+      }
+      .author-name {
+        font-family: "Museo700";
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+      }
+      .author-title {
+        color: $secondary-color;
+      }
     }
   }
 }

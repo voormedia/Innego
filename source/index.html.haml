@@ -57,12 +57,13 @@
       - data.references.reference.each do |r|
         .reference.card
           .card-header{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
+            .overlay
             %blockquote
               = r.content
           .card-body
-            %div{:style => "background-image: url('#{r["author-image"].sub("/source", "")}')"}
-            %p.autor-name= r["author-name"]
-            %p.autor-title= r["author-title"]
+            .avatar{:style => "background-image: url('#{r["author-image"].sub("/source", "")}')"}
+            %p.author-name= r["author-name"]
+            %p.author-title= r["author-title"]
 
 
 
