@@ -1,39 +1,43 @@
 %section{:style => "background-image: url('#{data.hero.background}')"}
-  %h1= data.hero.title
-  %p=data.hero.intro
-  %span.cta=data.hero["cta-text"]
+  .page-width
+    %h1= data.hero.title
+    %p=data.hero.intro
+    %span.cta=data.hero["cta-text"]
 
 %section{:id => data.services.title}
-  %h2= data.services.title
-  %p=data.services.intro
+  .page-width
+    %h2= data.services.title
+    %p=data.services.intro
 
-  - data.services.service.each do |s|
-    .service
-      %h3= s.title
-      %p= s.content
+    - data.services.service.each do |s|
+      .service
+        %h3= s.title
+        %p= s.content
 
 %section{:id => data.about.title}
-  %div
-    %h2= data.about.title
-    %p= data.about.intro
-    %p= data.about.content
-  %div{:style => "background-image: url('#{data.about.largeimg}')"}
-    .reference
-      %img{:src => data.about["reference-image"]}
-      = data.about["reference-text"]
-      %span= data.about["reference-author"]
-      %span= data.about["reference-author-title"]
+  .page-width
+    %div
+      %h2= data.about.title
+      %p= data.about.intro
+      %p= data.about.content
+    %div{:style => "background-image: url('#{data.about.largeimg}')"}
+      .reference
+        %img{:src => data.about["reference-image"]}
+        = data.about["reference-text"]
+        %span= data.about["reference-author"]
+        %span= data.about["reference-author-title"]
 
 %section{:id => data.projects.title}
-  %h2= data.projects.title
-  %p=data.projects.intro
+  .page-width
+    %h2= data.projects.title
+    %p=data.projects.intro
 
-  - data.projects.project.each do |project|
-    .project
-      %div
-        %h3= project.title
-        %p= project.content
-      %div{:style => "background-image: url('#{project.image}')"}
+    - data.projects.project.each do |project|
+      .project
+        %div
+          %h3= project.title
+          %p= project.content
+        %div{:style => "background-image: url('#{project.image}')"}
 
 
 
