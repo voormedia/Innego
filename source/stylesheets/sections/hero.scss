@@ -4,15 +4,21 @@
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
 
   .page-width {
     position: relative;
     z-index: 100;
     align-items: center;
+    display: flex;
 
     .content {
       margin-left: auto;
       width: 45%;
+    }
+
+    .subtitle {
+      font-size: 2rem;
     }
   }
 
@@ -43,12 +49,4 @@
     margin-top: 1.5rem;
     display: inline-block;
   }
-}
-
-.flex {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
 }

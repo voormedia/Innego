@@ -1,8 +1,9 @@
-%section{:style => "background-image: url('#{data.hero.background}')"}
+%section.hero{:style => "background-image: url('#{data.hero.background.sub("/source", "")}')"}
   .page-width
-    %h1= data.hero.title
-    %p.subtitle=data.hero.intro
-    %span.cta=data.hero["cta-text"]
+    .content
+      %h1= data.hero.title
+      %p.subtitle= data.hero.intro
+      %span.cta= data.hero["cta-text"]
 
 %section{:id => data.services.title}
   .page-width
