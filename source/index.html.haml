@@ -45,19 +45,19 @@
           %p= project.content
         %div{:style => "background-image: url('#{project.image}')"}
 
-%section{:id => data.references.title}
+%section.references{:id => data.references.title}
   .page-width
     %h2= data.references.title
     %p.subtitle= data.references.intro
-
-    - data.references.reference.each do |r|
-      .project
-        %div{:style => "background-image: url('#{r["background-image"]}')"}
-          %blockquote
-            = r.content
-        %div{:style => "background-image: url('#{r["author-image"]}')"}
-        %span= r["author-name"]
-        %span= r["author-title"]
+    .cards
+      - data.references.reference.each do |r|
+        .reference.card
+          %div{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
+            %blockquote
+              = r.content
+          %div{:style => "background-image: url('#{r["author-image"]}')"}
+          %span= r["author-name"]
+          %span= r["author-title"]
 
 
 

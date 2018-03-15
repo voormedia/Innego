@@ -4,6 +4,7 @@ a {
   cursor: pointer;
   outline: none;
   font-family: "Museo500";
+  font-size: 1.6rem;
   &:hover {
     color: darken($primary-color, 10);
   }
