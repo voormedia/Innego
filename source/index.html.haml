@@ -39,6 +39,20 @@
           %p= project.content
         %div{:style => "background-image: url('#{project.image}')"}
 
+%section{:id => data.references.title}
+  .page-width
+    %h2= data.references.title
+    %p= data.references.intro
+
+    - data.references.reference.each do |r|
+      .project
+        %div{:style => "background-image: url('#{r["background-image"]}')"}
+          %blockquote
+            = r.content
+        %div{:style => "background-image: url('#{r["author-image"]}')"}
+        %span= r["author-name"]
+        %span= r["author-title"]
+
 
 
 
