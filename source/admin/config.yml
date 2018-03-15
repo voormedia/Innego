@@ -3,7 +3,7 @@ backend:
   repo: Voormedia/innego # Path to your GitHub repository
   branch: main # Branch to update (master by default)
 
-media_folder: "images/uploads" # Folder where user uploaded files should go
+media_folder: "source/images/uploads" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
   - label: "Sections"
     name: "sections"
