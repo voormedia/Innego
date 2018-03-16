@@ -1,6 +1,9 @@
 section.services {
-  padding: 11.8rem 3rem 23rem;
+  padding: 5.8rem 1rem 9rem;
   background: linear-gradient(172.58deg, #FFFFFF 0%, #F4F4F4 100%);
+  @media (min-width: $desktop) {
+    padding: 11.8rem 3rem 23rem;
+  }
   .card {
     background-repeat: no-repeat;
     background-size: 14rem;

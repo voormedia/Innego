@@ -1,9 +1,12 @@
 section.contact {
-  padding-top: 13.8rem;
-  padding-bottom: 12.5rem;
+  padding: 3.8rem 0;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-width: $desktop) {
+    padding-top: 13.8rem;
+    padding-bottom: 12.5rem;
+  }
   .overlay {
     position: absolute;
     height: 100%;
@@ -16,15 +19,18 @@ section.contact {
   .contact-container {
     display: flex;
     background: white;
+    flex-direction: column;
+
     .contact-details {
       padding: 5rem 6.4rem;
-      width: 60%;
       h3 {
         font-size: 2.6rem;
       }
       .details {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+
         .company-details {
           max-width: 23rem;
           margin-right: 3rem;
@@ -65,7 +71,8 @@ section.contact {
           max-width: 31.1rem;
           min-height: 22.2rem;
           background-color: #FFFFFF;
-          box-shadow: 6px 6px 24px 0 rgba(0,0,0,0.16);
+          box-shadow: 0.6rem 0.6rem 2.4rem 0 rgba(0,0,0,0.16);
+          margin-top: 3rem;
           .linkedin-details {
             display: flex;
             padding: 2.9rem 2.5rem;
@@ -107,8 +114,6 @@ section.contact {
     .contact-form {
       padding: 4.2rem;
       box-sizing: border-box;
-      max-width: 43.3rem;
-      width: 40%;
       background: linear-gradient(153.42deg, #E9E9E9 0%, #C1C1C1 100%);
       input {
         margin-bottom: 1.6rem;
@@ -119,4 +124,25 @@ section.contact {
       }
     }
   }
+  @media (min-width: $tablet ) {
+    .details {
+      flex-direction: row !important;
+      .linkedin {
+        margin-top: 0;
+      }
+    }
+  }
+  @media (min-width: $container) {
+    .contact-container {
+      flex-direction: row;
+      .contact-details {
+        width: 60%;
+      }
+      .contact-form {
+        width: 40%;
+        max-width: 43.3rem;
+      }
+    }
+  }
+
 }
