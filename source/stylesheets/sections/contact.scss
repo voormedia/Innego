@@ -24,34 +24,98 @@ section.contact {
       }
       .details {
         display: flex;
+        justify-content: space-between;
         .company-details {
           max-width: 23rem;
+          margin-right: 3rem;
+          box-sizing: border-box;
           .company {
             font-family: "Museo700";
             font-size: 2rem;
           }
-          .address {
 
-          }
           .phone {
             font-family: "Museo700";
             color: $primary-color;
             margin-bottom: 0.5rem;
+            .fa-phone {
+              transform: scaleX(-1);
+              color: $primary-color;
+              margin-right: 0.7rem;
+              font-size: 1.6rem;
+            }
           }
           .email {
             font-family: "Museo700";
-            color: $secondary-color;
+            a {
+              color: $secondary-color;
+            }
+            .fa-envelope {
+              color: $secondary-color;
+              font-size: 2rem;
+              margin-right: 0.7rem;
+            }
+          }
+        }
+        .linkedin {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          box-sizing: border-box;
+          max-width: 31.1rem;
+          min-height: 22.2rem;
+          background-color: #FFFFFF;
+          box-shadow: 6px 6px 24px 0 rgba(0,0,0,0.16);
+          .linkedin-details {
+            display: flex;
+            padding: 2.9rem 2.5rem;
+            .avatar {
+              margin-right: 1.6rem;
+              height: 8rem;
+              width: 8rem;
+              min-width: 8rem;
+              background-size: cover;
+              border-radius: 50%;
+            }
+            .matthijs {
+              .name {
+                margin-bottom: 0.5rem;
+                font-family: "Museo700";
+                font-size: 1.8rem;
+              }
+            }
+          }
+          .linkedin-button {
+            font-family: "Museo700";
+            height: 6.3rem;
+            line-height: 6.3rem;
+            display: block;
+            text-align: center;
+            color: white;
+            background-color: #0077B5;
+            .fa-linkedin-in {
+              font-size: 2.4rem;
+              margin-right: 1rem;
+            }
+            &:hover {
+              background-color: lighten(#0077B5, 5);
+            }
           }
         }
       }
     }
     .contact-form {
-      padding: 5rem 6.4rem;
+      padding: 4.2rem;
+      box-sizing: border-box;
+      max-width: 43.3rem;
       width: 40%;
       background: linear-gradient(153.42deg, #E9E9E9 0%, #C1C1C1 100%);
+      input {
+        margin-bottom: 1.6rem;
+      }
       textarea {
         height: 9rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1rem;
       }
     }
   }

@@ -5,6 +5,10 @@ section.services {
     background-repeat: no-repeat;
     background-size: 14rem;
     background-position: right bottom;
+    h3 {
+      hyphens: auto;
+    }
+
     > p {
       margin-bottom: 6rem;
     }

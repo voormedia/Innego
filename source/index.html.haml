@@ -76,9 +76,24 @@
           .company-details
             %p.company= data.contact["company-name"]
             %p.address= data.contact["company-address"]
-            %p.phone= data.contact["phone"]
-            %p.email= data.contact["email"]
+            .phone
+              %span{class: "fas fa-phone"}
+              %a{href: "tel:#{data.contact["phone"]}" }= data.contact["phone"]
+            .email
+              %span{class: "fas fa-envelope"}
+              %a{href:"mailto:#{data.contact["email"]}"}= data.contact["email"]
           .linkedin
+            .linkedin-details
+              .avatar{:style => "background-image: url('#{data.contact["avatar"].sub("/source", "")}')"}
+              .matthijs
+                %p.name Matthijs Plat
+                %p.job-description= data.contact["job-description"]
+            %a.linkedin-button{href: "https://www.linkedin.com/in/matthijsplat/"}
+              %span{class: "fab fa-linkedin-in"}
+              Bekijk LinkedIn profiel
+
+
+
       .contact-form
         %form
           %input{type: "text", placeholder: "Naam", name: "name"}
