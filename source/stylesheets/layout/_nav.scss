@@ -53,7 +53,9 @@ nav {
   }
 
   .logos {
+    position: relative;
     float: left;
+    z-index: 999;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     top: 0;
@@ -189,6 +191,7 @@ nav {
 .show-menu {
   .logos {
     position: fixed;
+    transition: all 0.2s ease-in-out;
     z-index: 999;
     left: 5rem;
     top: 6rem;
