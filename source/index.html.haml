@@ -93,7 +93,7 @@
               Bekijk LinkedIn profiel
 
       .contact-form
-        %form
+        %form{ name: "contact", method: "POST", data: {netlify: "true"}}
           .input-container
             %span{class: "fas fa-user"}
             %input{type: "text", placeholder: "Naam", name: "name"}
