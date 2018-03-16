@@ -168,7 +168,6 @@ nav {
   &.transparent {
     background: transparent;
     padding: 2rem 0 3rem;
-
     a {
       color: #fff;
     }
@@ -194,13 +193,16 @@ nav {
 }
 
 .show-menu {
+  .transparent {
+    .logos {
+      top: 5rem;
+    }
+  }
   .logos {
-    position: fixed;
     transition: all 0.2s ease-in-out;
     z-index: 999;
-    left: 3rem;
-    top: 6rem;
-
+    left: 4rem;
+    top: 5.9rem;
     .logo-white {
       display: block;
     }
