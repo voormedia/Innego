@@ -115,7 +115,10 @@ section.contact {
       }
     }
     .contact-form {
-      padding: 4.2rem;
+      padding: 3.4rem;
+      @media (min-width: $desktop) {
+        padding: 4.2rem;
+      }
       box-sizing: border-box;
       background: linear-gradient(153.42deg, #E9E9E9 0%, #C1C1C1 100%);
       .input-container {
