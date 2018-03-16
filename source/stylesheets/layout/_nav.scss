@@ -1,0 +1,32 @@
+nav {
+  z-index: 900;
+  width: 100%;
+
+  &.fixed {
+    position: fixed;
+  }
+
+  .page-width {
+    max-width: 112rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    padding: 0;
+    text-align: right;
+
+    li {
+      list-style: none;
+      display: inline;
+      margin: 0 2.1rem;
+
+      a {
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: $header-font;
+        font-weight: 600;
+      }
+    }
+  }
+}

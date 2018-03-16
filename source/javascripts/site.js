@@ -23,4 +23,12 @@ $(function() {
   $('[data-popup-close]').on('click', function(e)  {
     closePopup(e, this)
   });
+
+  $('section').each(function(e) {
+    var menu_item = $(this).attr('id');
+    if (menu_item != null) {
+      $("<li><a href='#"+menu_item+"'>"+menu_item+"</a></li>").appendTo('ul.menu');
+    }
+  });
+
 });
