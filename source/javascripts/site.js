@@ -31,4 +31,43 @@ $(function() {
     }
   });
 
+  $(window).scroll(function() {
+      if ($(window).scrollTop() >= 30) {
+          $("nav.fixed").removeClass("transparent");
+      } else {
+        $("nav.fixed").addClass("transparent");
+      }
+  });
+
+  $('.logos').on('click', function(e) {
+     $('html, body').animate({
+         scrollTop: $("body").offset().top
+     }, 1000);
+  });
+
+  $('nav a').each(function(){
+      $(this).parent().width($(this).width() + 4);
+  });
+
+  $('section').each(function() {
+    var id = $(this).attr('id');
+  });
+
+  $('a[href*="#"]')
+    .click(function(event) {
+      if (
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
+        location.hostname == this.hostname
+      ) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000 );
+        }
+      }
+    });
 });

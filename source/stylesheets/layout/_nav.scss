@@ -1,9 +1,25 @@
 nav {
   z-index: 900;
   width: 100%;
+  background: $white-color;
+  padding: 0.1rem 0 0.8rem;
+  transition: 0.2s all ease-in-out;
 
-  &.fixed {
-    position: fixed;
+  img {
+    max-width: 18rem;
+  }
+
+  .logos {
+    float: left;
+    cursor: pointer;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .logo-white {
+    display: none;
   }
 
   .page-width {
@@ -13,20 +29,50 @@ nav {
   }
 
   ul {
-    padding: 0;
+    padding: 1.1rem 0 0 0;
     text-align: right;
+    overflow: auto;
 
     li {
       list-style: none;
-      display: inline;
+      display: inline-block;
       margin: 0 2.1rem;
 
       a {
-        color: #fff;
         font-size: 1.6rem;
         font-family: $header-font;
         font-weight: 600;
+        display: inline-block;
+
+        &:hover {
+          font-weight: 700;
+        }
       }
     }
+  }
+
+  &.fixed {
+    position: fixed;
+  }
+
+  &.transparent {
+    background: transparent;
+    padding: 2rem 0 3rem;
+
+    a {
+      color: #fff;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .logo-white {
+      display: block;
+    }
+  }
+
+  &.footer {
+    padding: 2.5rem 0 3.2rem 0;
   }
 }
