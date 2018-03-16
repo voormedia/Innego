@@ -67,9 +67,11 @@
     }
 
     .content {
-      padding-left: 2.5rem;
       overflow: auto;
       max-width: 35rem;
+      @media (min-width: $tablet) {
+        padding-left: 2.5rem;
+      }
 
       p {
         font-size: 1.8rem;

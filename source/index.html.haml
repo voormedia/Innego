@@ -22,7 +22,6 @@
           %p= s.intro
           %a.btn{"data-popup-open" => s.title, :href => "#"} Lees meer
 
-
 %section.about{:id => data.about.title}
   .left
     .content
@@ -61,6 +60,7 @@
           .card-header{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
             .overlay
             %blockquote
+              %span{class: "fas fa-quote-left"}
               = r.content
           .card-body
             .avatar{:style => "background-image: url('#{r["author-image"].sub("/source", "")}')"}
