@@ -76,6 +76,7 @@ $(function() {
 
   $('a[href*="#"]')
     .click(function(event) {
+      $('body').removeClass('show-menu');
       if (
         location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
         &&
