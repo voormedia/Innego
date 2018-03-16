@@ -22,7 +22,10 @@ section.contact {
     flex-direction: column;
 
     .contact-details {
-      padding: 5rem 6.4rem;
+      padding: 3rem 3.4rem;
+      @media (min-width: $desktop) {
+        padding: 5rem 6.4rem;
+      }
       h3 {
         font-size: 2.6rem;
       }
