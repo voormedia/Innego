@@ -1,8 +1,10 @@
 .cards {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 5%;
   @media (min-width: $desktop) {
+    -ms-grid-columns: 30% 30% 30%;
     grid-template-columns: 30% 30% 30%;
   }
 
