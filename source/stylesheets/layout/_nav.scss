@@ -60,6 +60,11 @@ nav {
     transition: all 0.2s ease-in-out;
     top: 0;
     left: 0;
+    margin-left: 2rem;
+
+    @media (min-width: $wide-desktop) {
+      margin-left: 0;
+    }
   }
 
   .logo {
