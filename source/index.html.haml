@@ -12,11 +12,11 @@
 
 %section.services{:id => data.services.title}
   .page-width
-    %h2= data.services.title
-    %p.subtitle=data.services.intro
+    %h2.scroll-reveal= data.services.title
+    %p.subtitle.scroll-reveal=data.services.intro
     .cards
       - data.services.service.each do |s|
-        .service.card{:style => "background-image: url('#{s.image.sub("/source", "")}')"}
+        .service.card.scroll-reveal{:style => "background-image: url('#{s.image.sub("/source", "")}')"}
           %h3= s.title
           %p= s.intro
           = partial "layouts/components/popup",:locals => { :service => s }
@@ -24,11 +24,11 @@
 %section.about{:id => data.about.title}
   .left
     .content
-      %h2= data.about.title
-      %p.subtitle= data.about.intro
+      %h2.scroll-reveal= data.about.title
+      %p.subtitle.scroll-reveal= data.about.intro
       - data.about.content.each do |content|
-        %h3= content.title
-        %p= content.content
+        %h3.scroll-reveal= content.title
+        %p.scroll-reveal= content.content
   .right{:style => "background-image: url('#{data.about.largeimg.sub("/source", "")}')"}
     .reference
       .author-img{:style => "background-image: url('#{data.about["reference-image"].sub("/source", "")}')"}
@@ -39,11 +39,11 @@
 
 %section.projects{:id => data.projects.title}
   .page-width
-    %h2= data.projects.title
-    %p.subtitle=data.projects.intro
+    %h2.scroll-reveal= data.projects.title
+    %p.subtitle.scroll-reveal=data.projects.intro
     .projects
       - data.projects.project.each do |project|
-        .project
+        .project.scroll-reveal
           .content
             %h4= project.title
             %p= project.content
@@ -51,11 +51,11 @@
 
 %section.references{:id => data.references.title}
   .page-width
-    %h2= data.references.title
-    %p.subtitle= data.references.intro
+    %h2.scroll-reveal= data.references.title
+    %p.subtitle.scroll-reveal= data.references.intro
     .cards
       - data.references.reference.each do |r|
-        .reference.card
+        .reference.card.scroll-reveal
           .card-header{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
             .overlay
             %blockquote

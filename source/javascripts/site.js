@@ -90,4 +90,12 @@ $(function() {
         }
       }
     });
+
+  window.sr = ScrollReveal();
+  sr.reveal('.scroll-reveal', {
+      duration: 600,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease-out',
+    });
 });
