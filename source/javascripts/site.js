@@ -37,9 +37,6 @@ $(function() {
      }, 1000);
   });
 
-  $('nav a').each(function(){
-      $(this).parent().width($(this).width() + 4);
-  });
 
   var menu = $("nav.fixed");
   var menu_height = menu.outerHeight()+15;
@@ -71,6 +68,10 @@ $(function() {
     } else {
       $("nav.fixed").addClass("transparent");
     }
+  });
+
+  $('.menu-toggle').on('click', function(e) {
+    $('body').toggleClass('show-menu');
   });
 
   $('a[href*="#"]')
