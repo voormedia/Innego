@@ -92,14 +92,21 @@
               %span{class: "fab fa-linkedin-in"}
               Bekijk LinkedIn profiel
 
-
-
       .contact-form
         %form
-          %input{type: "text", placeholder: "Naam", name: "name"}
-          %input{type: "email", placeholder: "Email adres", name: "email"}
-          %input{type: "tel", placeholder: "Telefoonnummer", name: "number"}
-          %textarea{placeholder: "Bericht", name: "bericht"}
+          .input-container
+            %span{class: "fas fa-user"}
+            %input{type: "text", placeholder: "Naam", name: "name"}
+          .input-container
+            %span{class: "far fa-envelope"}
+            %input{type: "email", placeholder: "Email adres", name: "email"}
+          .input-container
+            %span{class: "fas fa-phone"}
+            %input{type: "tel", placeholder: "Telefoonnummer", name: "number"}
+          .textarea-container
+            %span{class: "fas fa-pencil-alt"}
+            %textarea{placeholder: "Bericht", name: "bericht"}
+
           %button.success{type: "submit"}
             Verstuur bericht
 

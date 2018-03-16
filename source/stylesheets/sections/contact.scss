@@ -115,13 +115,37 @@ section.contact {
       padding: 4.2rem;
       box-sizing: border-box;
       background: linear-gradient(153.42deg, #E9E9E9 0%, #C1C1C1 100%);
-      input {
-        margin-bottom: 1.6rem;
+      .input-container {
+        position: relative;
+        svg {
+          position: absolute;
+          top: 1.5rem;
+          left: 1.2rem;
+          color: #b9b9b9;
+          &.fa-phone {
+            transform: scaleX(-1);
+          }
+        }
+        input {
+          margin-bottom: 1.6rem;
+          padding-left: 3.4rem;
+        }
       }
-      textarea {
-        height: 9rem;
-        margin-bottom: 1rem;
+      .textarea-container {
+        position: relative;
+        svg {
+          top: 1.1rem;
+          position: absolute;
+          left: 1.2rem;
+          color: #b9b9b9;
+        }
+        textarea {
+          height: 9rem;
+          margin-bottom: 1rem;
+          padding-left: 3.4rem;
+        }
       }
+
     }
   }
   @media (min-width: $tablet ) {
