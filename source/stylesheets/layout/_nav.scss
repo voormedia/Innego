@@ -60,7 +60,7 @@ nav {
     transition: all 0.2s ease-in-out;
     top: 0;
     left: 0;
-    margin-left: 2rem;
+    margin-left: 1rem;
 
     @media (min-width: $wide-desktop) {
       margin-left: 0;
@@ -201,7 +201,7 @@ nav {
   .logos {
     transition: all 0.2s ease-in-out;
     z-index: 999;
-    left: 2rem;
+    left: 3rem;
     top: 5.9rem;
     .logo-white {
       display: block;
