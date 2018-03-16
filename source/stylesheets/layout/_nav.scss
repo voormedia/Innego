@@ -122,9 +122,13 @@ nav {
         }
 
         a {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 700;
           font-family: $header-font;
+
+          @media (min-width: $tablet) {
+            font-size: 4rem;
+          }
 
           @media (min-width: $wide-desktop) {
             font-size: 1.6rem;
