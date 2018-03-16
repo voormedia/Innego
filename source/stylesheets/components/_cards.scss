@@ -1,9 +1,11 @@
 .cards {
-  display: -ms-grid;
+
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 5%;
   @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
     -ms-grid-columns: 30% 30% 30%;
     grid-template-columns: 30% 30% 30%;
   }
@@ -14,9 +16,19 @@
     border-radius: 2px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 25px 0 rgba(0,0,0,0.02);
+
     @media (min-width: $desktop) {
       margin-top: 0;
+      &:not(:nth-child(3n)) {
+        margin-right: 4rem;
+      }
+      @supports (display: grid) {
+        .grid-child {
+          margin-right: 0;
+        }
+      }
     }
+
   }
 }
 

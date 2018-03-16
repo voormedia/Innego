@@ -25,6 +25,7 @@ section.projects {
       margin-bottom: 4%;
       box-shadow: 12px 12px 24px 0 rgba(0,0,0,0.08);
       overflow: hidden;
+      width: 100%;
       @media (min-width: $desktop) {
         width: 48%;
       }

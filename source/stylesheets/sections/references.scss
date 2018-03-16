@@ -5,13 +5,19 @@ section.references {
     overflow: hidden;
     border-radius: 0.4rem;
     padding: 0;
+    @media (min-width: $desktop) {
+      min-width: 34.6rem;
+    }
     .card-header {
       position: relative;
       padding: 4rem;
       background-size: cover;
       background-repeat: no-repeat;
-      min-height: 23rem;
+      padding-bottom: 7rem;
       box-sizing: border-box;
+      @media (min-width: $desktop) {
+        min-height: 22rem;
+      }
       .overlay {
         position: absolute;
         height: 100%;
@@ -41,6 +47,9 @@ section.references {
         margin: 0 auto;
         position: absolute;
         top: -5.5rem;
+        // IE11 fix
+        transform: translateX(-50%);
+        left: 50%;
       }
       .author-name {
         font-family: "Museo700";
