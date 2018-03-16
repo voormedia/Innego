@@ -27,7 +27,7 @@ $(function() {
   $('section').each(function(e) {
     var menu_item = $(this).attr('id');
     if (menu_item != null) {
-      $("<li><a href='#"+menu_item+"'>"+menu_item+"</a></li>").appendTo('ul.menu');
+      $("<li><a class='menu-link' href='#"+menu_item+"'>"+menu_item+"</a></li>").appendTo('ul.menu');
     }
   });
 
@@ -74,7 +74,7 @@ $(function() {
     $('body').toggleClass('show-menu');
   });
 
-  $('a[href*="#"]')
+  $('.menu-link')
     .click(function(event) {
       $('body').removeClass('show-menu');
       if (

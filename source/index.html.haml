@@ -9,7 +9,8 @@
       .scroll-wheel
     .arrow-down
     .arrow-down
-
+- data.services.service.each do |s|
+  = partial "layouts/components/popup",:locals => { :service => s }
 %section.services{:id => data.services.title}
   .page-width
     %h2.scroll-reveal= data.services.title
@@ -19,7 +20,8 @@
         .service.card.scroll-reveal{:style => "background-image: url('#{s.image.sub("/source", "")}')"}
           %h3= s.title
           %p= s.intro
-          = partial "layouts/components/popup",:locals => { :service => s }
+          %a.btn{"data-popup-open" => s.title, :href => "#"} Lees meer
+
 
 %section.about{:id => data.about.title}
   .left
