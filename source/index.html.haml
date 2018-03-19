@@ -20,7 +20,8 @@
         .service.card.scroll-reveal{:style => "background-image: url('#{s.image.sub("/source", "")}')"}
           %h3= s.title
           %p= s.intro
-          %a.btn{"data-popup-open" => s.title, :href => "#"} Lees meer
+          - if !s.content.empty?
+            %a.btn{"data-popup-open" => s.title, :href => "#"} Lees meer
 
 %section.about{:id => data.about.title}
   .left
@@ -28,7 +29,8 @@
       %h2.scroll-reveal= data.about.title
       %p.subtitle.scroll-reveal= data.about.intro
       - data.about.content.each do |content|
-        %h3.scroll-reveal= content.title
+        - if content.title
+          %h5.scroll-reveal= content.title
         %p.scroll-reveal= content.content
   .right{:style => "background-image: url('#{data.about.largeimg.sub("/source", "")}')"}
     .reference
