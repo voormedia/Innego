@@ -5,54 +5,21 @@ intro: >
   verstaat Innego alle werkzaamheden die nodig zijn om een product te maken of
   een dienst te leveren. Hierin onderscheidt Innego 3 hoofdactiviteiten:
 service:
-  - content: >-
-      Tijdens de Lean Six Sigma Black Belt Opleiding krijgt u de nodige bagage
-      om zelfstandig (grotere) verbeterinitiatieven uit te voeren en Green Belts
-      te begeleiden in verbetertrajecten.
-
-      Tijdens de Lean Six Sigma Black Belt Opleiding krijgt u de nodige bagage
-      om zelfstandig (grotere) verbeterinitiatieven uit te voeren en Green Belts
-      te begeleiden in verbetertrajecten.
-
-      Tijdens de Lean Six Sigma Black Belt Opleiding krijgt u de nodige bagage
-      om zelfstandig (grotere) verbeterinitiatieven uit te voeren en Green Belts
-      te begeleiden in verbetertrajecten.
+  - content: ''
     image: /source/images/uploads/six-sigma.png
     title: Organisatieverbetering
     intro: >-
       Met de klant bouwen aan resultaat: beginnen daar waar de klant staat, en
       van daaruit de juiste methoden toepassen om korte en lange termijn
       resultaat te boeken. 
-  - content: >-
-      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
-      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-
-      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
-      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
-      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - content: ''
     image: /source/images/uploads/kaizen.png
     title: Trainen
     intro: >-
       Door individuele training of groepstraining/workshops kan gericht kennis
       en ervaring vergroot worden, bij de medewerkers waar dat de meeste impact
       heeft.
-  - content: >-
-      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
-      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
-      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-      Ut lacinia ante vel est sollicitudin, sit amet vehicula ante viverra.
-      Suspendisse iaculis posuere nisl, scelerisque consequat ipsum euismod id.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  - content: ''
     image: /source/images/uploads/management.png
     title: Coachen
     intro: >-
