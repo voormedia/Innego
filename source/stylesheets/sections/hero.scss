@@ -1,14 +1,20 @@
 .hero {
-  height: 70vh;
   color: $white-color;
   position: relative;
   display: flex;
   background-size: cover;
   background-position: center center;
-  max-height: 900px;
   min-height: 500px;
   padding: 10rem 1rem;
+  max-height: none;
+  height: auto;
 
+
+
+  @media (min-width: $desktop) {
+    max-height: 900px;
+    height: 70vh;
+  }
   .page-width {
     position: relative;
     z-index: 100;
