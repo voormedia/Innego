@@ -3,14 +3,14 @@ intro: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sapien arcu,
   dignissim vitae faucibus vel, dictum non dolor.
 reference:
-  - author-image: /source/images/uploads/avatar1.jpeg
-    author-logo: /source/images/uploads/logo1.jpeg
-    author-name: Roger Beumer
-    author-title: Consultant - Lean Six Sigma
+  - author-image: /source/images/uploads/rene-kosse.jpg
+    author-logo: /source/images/uploads/logo2.jpg
+    author-name: René Kosse
+    author-title: Process Excellence Leader
     background-image: /source/images/uploads/reference3.jpg
     content: >-
-      Duis pellentesque non urna nec lobortis. Nam vestibulum ornare iaculis. Ut
-      arcu odio, commodo tincidunt ex ac, finibus sodales eros. 
+      Matthijs heeft een zeer goede visie op hoe de organisatie in te richten
+      zodat er continu vooruitgang is voor de organisatie en het individu!
   - author-image: /source/images/uploads/avatar2.jpeg
     author-logo: /source/images/uploads/logo2.jpg
     author-name: René Kosse
