@@ -31,6 +31,8 @@ $(function() {
     }
   });
 
+  $("<li><a class='menu-link' href='/pdf-test.pdf'>Terms and conditions</a></li>").appendTo('.footer ul.menu');
+
   $('.logos').on('click', function(e) {
      $('html, body').animate({
          scrollTop: $("body").offset().top
