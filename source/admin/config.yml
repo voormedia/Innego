@@ -8,6 +8,14 @@ collections: # A list of collections the CMS should be able to edit
   - label: "Sections"
     name: "sections"
     files:
+      - label: "Hero section"
+        name: "hero"
+        file: "data/hero.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - {label: Button text, name: cta-text, widget: string}
+          - {label: Background image, name: background, widget: image}
       - label: "Contact"
         name: "contact"
         file: "data/contact.yml"
@@ -80,11 +88,4 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Intro, name: intro, widget: string}
               - {label: Content, name: content, widget: text}
               - {label: Image, name: image, widget: image}
-      - label: "Hero section"
-        name: "hero"
-        file: "data/hero.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - {label: Button text, name: cta-text, widget: string}
-          - {label: Background image, name: background, widget: image}
+
