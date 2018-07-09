@@ -40,17 +40,17 @@
         %span.name= data.about["reference-author"]
         %span.title= data.about["reference-author-title"]
 
-%section.projects{:id => data.projects.title}
-  .page-width
-    %h2.scroll-reveal= data.projects.title
-    %p.subtitle.scroll-reveal=data.projects.intro
-    .projects
-      - data.projects.project.each do |project|
-        .project.scroll-reveal
-          .content
-            %h4= project.title
-            %p= project.content
-          .image{:style => "background-image: url('#{project.image}')"}
+-# %section.projects{:id => data.projects.title}
+-#   .page-width
+-#     %h2.scroll-reveal= data.projects.title
+-#     %p.subtitle.scroll-reveal=data.projects.intro
+-#     .projects
+-#       - data.projects.project.each do |project|
+-#         .project.scroll-reveal
+-#           .content
+-#             %h4= project.title
+-#             %p= project.content
+-#           .image{:style => "background-image: url('#{project.image}')"}
 
 %section.references{:id => data.references.title}
   .page-width
