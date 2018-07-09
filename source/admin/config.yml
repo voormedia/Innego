@@ -16,45 +16,18 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Intro, name: intro, widget: text}
           - {label: Button text, name: cta-text, widget: string}
           - {label: Background image, name: background, widget: image}
-      - label: "Contact"
-        name: "contact"
-        file: "data/contact.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Company name, name: company-name, widget: string}
-          - {label: Company address, name: company-address, widget: markdown}
-          - {label: Phone number, name: phone, widget: string}
-          - {label: Email address, name: email, widget: string}
-          - {label: Background image, name: background, widget: image}
-          - {label: Matthijs linkedin avatar, name: avatar, widget: image}
-          - {label: Matthijs job description, name: job-description, widget: string}
-      - label: "References"
-        name: "references"
-        file: "data/references.yml"
+      - label: "Services"
+        name: "services"
+        file: "data/services.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - label: Reference
-            name: reference
-            widget: list
-            fields:
-              - {label: Content, name: content, widget: text}
-              - {label: Author name, name: author-name, widget: string}
-              - {label: Author title, name: author-title, widget: string}
-              - {label: Author image, name: author-image, widget: image}
-              - {label: Author logotype, name: author-logo, widget: image}
-              - {label: Background image, name: background-image, widget: image}
-      - label: "Projects"
-        name: "projects"
-        file: "data/projects.yml"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: text}
-          - label: Project
-            name: project
+          - label: Service
+            name: service
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
+              - {label: Intro, name: intro, widget: string}
               - {label: Content, name: content, widget: text}
               - {label: Image, name: image, widget: image}
       - label: "About"
@@ -74,18 +47,48 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Reference image, name: reference-image, widget: image, required: false}
           - {label: Reference author, name: reference-author, widget: text, required: false}
           - {label: Reference author title, name: reference-author-title, widget: text, required: false}
-      - label: "Services"
-        name: "services"
-        file: "data/services.yml"
+      - label: "References"
+        name: "references"
+        file: "data/references.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: text}
-          - label: Service
-            name: service
+          - label: Reference
+            name: reference
+            widget: list
+            fields:
+              - {label: Content, name: content, widget: text}
+              - {label: Author name, name: author-name, widget: string}
+              - {label: Author title, name: author-title, widget: string}
+              - {label: Author image, name: author-image, widget: image}
+              - {label: Author logotype, name: author-logo, widget: image}
+              - {label: Background image, name: background-image, widget: image}
+      - label: "Contact"
+        name: "contact"
+        file: "data/contact.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Company name, name: company-name, widget: string}
+          - {label: Company address, name: company-address, widget: markdown}
+          - {label: Phone number, name: phone, widget: string}
+          - {label: Email address, name: email, widget: string}
+          - {label: Background image, name: background, widget: image}
+          - {label: Matthijs linkedin avatar, name: avatar, widget: image}
+          - {label: Matthijs job description, name: job-description, widget: string}
+
+      - label: "Projects"
+        name: "projects"
+        file: "data/projects.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: text}
+          - label: Project
+            name: project
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Intro, name: intro, widget: string}
               - {label: Content, name: content, widget: text}
               - {label: Image, name: image, widget: image}
+
+
 
