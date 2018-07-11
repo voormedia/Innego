@@ -31,7 +31,7 @@ $(function() {
     }
   });
 
-  $("<li><a class='menu-link' href='/pdf-test.pdf'>Terms and conditions</a></li>").appendTo('.footer ul.menu');
+  $("<li><a class='menu-link' href='/Innego-Algemene-Voorwaarden-v201807.pdf'>Algemene voorwaarden</a></li>").appendTo('.footer ul.menu');
 
   $('.logos').on('click', function(e) {
      $('html, body').animate({
