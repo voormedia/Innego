@@ -1,6 +1,9 @@
 section.references {
   background-color: #F2F2F2;
   padding-bottom: 11.4rem;
+  .subtitle {
+    max-width: none;
+  }
   .card {
     overflow: hidden;
     border-radius: 0.4rem;
@@ -16,7 +19,7 @@ section.references {
       padding-bottom: 7rem;
       box-sizing: border-box;
       @media (min-width: $desktop) {
-        min-height: 22rem;
+        min-height: 26.4rem;
       }
       .overlay {
         position: absolute;
