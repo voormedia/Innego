@@ -56,19 +56,24 @@
   .page-width
     %h2.scroll-reveal= data.references.title
     %p.subtitle.scroll-reveal= data.references.intro
-    .cards
-      - data.references.reference.each do |r|
-        .reference.card.scroll-reveal
-          .card-header{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
-            .overlay
-            %blockquote
-              %span{class: "fas fa-quote-left"}
-              = r.content
-          .card-body
-            .avatar{:style => "background-image: url('#{r["author-image"].sub("/source", "")}')"}
-            %p.author-name= r["author-name"]
-            %p.author-title= r["author-title"]
-            .author-logo{:style => "background-image: url('#{r["author-logo"].sub("/source", "")}')"}
+    .cards-container
+      .next-reference.fas.fa-arrow-circle-right
+      .previous-reference.fas.fa-arrow-circle-left
+      .cards
+        - data.references.reference.each do |r|
+          .reference.card.scroll-reveal
+            .card-header{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
+              .overlay
+              %blockquote
+                %span{class: "fas fa-quote-left"}
+                = r.content
+            .card-body
+              .avatar{:style => "background-image: url('#{r["author-image"].sub("/source", "")}')"}
+              %p.author-name= r["author-name"]
+              %p.author-title= r["author-title"]
+              .author-logo{:style => "background-image: url('#{r["author-logo"].sub("/source", "")}')"}
+      .bullets
+
 
 %section.contact{:id => "Contact", :style => "background-image: url('#{data.contact["background"].sub("/source", "")}')"}
   .overlay

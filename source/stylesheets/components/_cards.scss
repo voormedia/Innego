@@ -1,3 +1,23 @@
+.cards-container {
+  .next-reference,
+  .previous-reference {
+    position: absolute;
+    right: -5rem;
+    font-size: 33px;
+    color: #bdbdbd;
+    top: 54%;
+    cursor: pointer;
+    &:hover {
+      color: darken(#bdbdbd, 2);
+    }
+  }
+
+  .previous-reference {
+    opacity: 0;
+    left: -5rem;
+    transition: opacity 0.5s ease;
+  }
+}
 .cards {
   overflow: hidden;
   display: grid;
@@ -9,13 +29,22 @@
     -ms-grid-columns: 30% 30% 30%;
     grid-template-columns: 30% 30% 30%;
   }
+  // &.left {
+  //   .card {
+  //     position: relative;
+  //     left: -34.333%;
+  //   }
+  // }
 
   .card {
+    left: 0;
+    position: relative;
     margin-top: 2rem;
     padding: 3.5rem;
     border-radius: 2px;
     background-color: #FFFFFF;
     box-shadow: 2px 2px 25px 0 rgba(0,0,0,0.02);
+    transition: left 1s ease;
 
     @media (min-width: $desktop) {
       margin-top: 0;
@@ -32,4 +61,16 @@
   }
 }
 
-
+.bullets {
+  text-align: center;
+  margin-top: 3rem;
+  .fa-circle {
+    margin-right: 0.5rem;
+    font-size: 12px;
+    cursor: pointer;
+    color: grey;
+    &:hover {
+      color: black;
+    }
+  }
+}

@@ -39,6 +39,47 @@ $(function() {
      }, 1000);
   });
 
+  var left = 0;
+  var cardWidth = 34.333
+  var limit = ($(".references .cards .card").length - 3) * cardWidth
+  var step = 0;
+
+  $('.next-reference').on("click", function() {
+    if (!(Math.abs(left - cardWidth) > limit)) {
+      step += 1
+      left -= cardWidth
+      $(".references .cards .card").css("left", left + "%")
+      $('.previous-reference').css('opacity', 1);
+      $(".bullets .fa-circle").removeClass('fas').addClass('far')
+      $(".bullets .fa-circle[data-index='" + step + "'").removeClass('far').addClass('fas')
+    }
+  })
+
+  $('.previous-reference').on("click", function() {
+    if (left < 0) {
+      step -= 1
+      left += cardWidth
+      $(".references .cards .card").css("left", left + "%")
+      $(".bullets .fa-circle").removeClass('fas').addClass('far')
+      $(".bullets .fa-circle[data-index='" + step + "'").removeClass('far').addClass('fas')
+    }
+  })
+
+
+
+  // var numberOfCards = $(".references .cards .card").length - 2
+  // for (i = 0; i < numberOfCards; i++) {
+  //   if (i == 0) {
+  //     $('.cards-container .bullets').append("<div data-index='" + i + "' class='fas fa-circle'></div>")
+  //   } else {
+  //     $('.cards-container .bullets').append("<div data-index='" + i + "' class='far fa-circle'></div>")
+  //   }
+  // }
+
+  // $('.fa-circle').on('click', function(e) {
+  //   var index = $(e.target).data(index)
+  //   console.log("Sdfs")
+  // })
 
   var menu = $("nav.fixed");
   var menu_height = menu.outerHeight()+15;
