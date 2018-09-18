@@ -1,6 +1,7 @@
 .cards-container {
   .next-reference,
   .previous-reference {
+    display: none;
     position: absolute;
     right: -5rem;
     font-size: 33px;
@@ -9,6 +10,9 @@
     cursor: pointer;
     &:hover {
       color: darken(#bdbdbd, 2);
+    }
+    @media (min-width: $wide-desktop) {
+      display: block;
     }
   }
 
@@ -29,12 +33,6 @@
     -ms-grid-columns: 30% 30% 30%;
     grid-template-columns: 30% 30% 30%;
   }
-  // &.left {
-  //   .card {
-  //     position: relative;
-  //     left: -34.333%;
-  //   }
-  // }
 
   .card {
     left: 0;
@@ -45,6 +43,10 @@
     background-color: #FFFFFF;
     box-shadow: 2px 2px 25px 0 rgba(0,0,0,0.02);
     transition: left 1s ease;
+
+    @media (max-width: $wide-desktop) {
+      left: 0 !important;
+    }
 
     @media (min-width: $desktop) {
       margin-top: 0;
