@@ -1,5 +1,5 @@
 .cards {
-
+  overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 5%;
@@ -19,9 +19,9 @@
 
     @media (min-width: $desktop) {
       margin-top: 0;
-      &:not(:nth-child(3n)) {
+      // &:not(:nth-child(3n)) {
         margin-right: 4rem;
-      }
+      // }
       @supports (display: grid) {
         .grid-child {
           margin-right: 0;
