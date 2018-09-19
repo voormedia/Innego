@@ -60,7 +60,7 @@
       .next-reference.fas.fa-arrow-circle-right
       .previous-reference.fas.fa-arrow-circle-left
       .cards
-        - data.references.reference.each do |r|
+        - data.references.reference.shuffle.each do |r|
           .reference.card.scroll-reveal
             .card-header{:style => "background-image: url('#{r["background-image"].sub("/source", "")}')"}
               .overlay
