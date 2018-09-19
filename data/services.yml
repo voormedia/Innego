@@ -17,8 +17,8 @@ service:
     title: Trainen
     intro: >-
       Door individuele training of groepstraining/workshops kan gericht kennis
-      en ervaring vergroot worden, bij de medewerkers waar dat de meeste impact
-      heeft.
+      en ervaring vergroot worden, bij de medewerkers. Daar heeft het de meeste
+      impact.
   - content: ''
     image: /source/images/uploads/management.png
     title: Coachen
