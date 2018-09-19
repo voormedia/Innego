@@ -10,19 +10,18 @@ service:
     title: Organisatieverbetering
     intro: >-
       Met de klant bouwen aan resultaat: beginnen daar waar de klant staat, en
-      van daaruit de juiste methoden toepassen om korte en lange termijn
-      resultaat te boeken.
+      van daaruit de juiste methoden toepassen om korte- en
+      lange-termijnresultaat te boeken.
   - content: ''
     image: /source/images/uploads/kaizen.png
     title: Trainen
     intro: >-
       Door individuele training of groepstraining/workshops kan gericht kennis
-      en ervaring vergroot worden bij de medewerkers. Daar heeft het de meeste
-      impact.
+      en ervaring overgedragen en vergroot worden bij de medewerkers. Daar heeft
+      het de meeste impact.
   - content: ''
     image: /source/images/uploads/management.png
     title: Coachen
     intro: >-
-      Individuele coaching (op de werkvloer) zal leiden tot een versnelling van
-      de leercurve. Op zo’n manier dat de coachee aan het denken wordt gezet,
-      zodat de impact het grootste is.
+      Via individuele coaching wordt de medewerker aan het denken gezet.
+      Hierdoor is de impact het grootst.
