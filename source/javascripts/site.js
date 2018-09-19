@@ -43,15 +43,13 @@ $(function() {
   var cardWidth = 34.333
   var limit = ($(".references .cards .card").length - 3) * cardWidth
   var step = 0;
-
+  console.log("loaded")
   $('.next-reference').on("click", function() {
     if (!(Math.abs(left - cardWidth) > limit)) {
       step += 1
       left -= cardWidth
       $(".references .cards .card").css("left", left + "%")
       $('.previous-reference').css('opacity', 1);
-      $(".bullets .fa-circle").removeClass('fas').addClass('far')
-      $(".bullets .fa-circle[data-index='" + step + "'").removeClass('far').addClass('fas')
     }
   })
 
@@ -60,8 +58,6 @@ $(function() {
       step -= 1
       left += cardWidth
       $(".references .cards .card").css("left", left + "%")
-      $(".bullets .fa-circle").removeClass('fas').addClass('far')
-      $(".bullets .fa-circle[data-index='" + step + "'").removeClass('far').addClass('fas')
     }
   })
 
