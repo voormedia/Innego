@@ -1,6 +1,7 @@
 .cards-container {
   .next-reference,
   .previous-reference {
+    z-index: 100;
     display: none;
     position: absolute;
     right: -5rem;

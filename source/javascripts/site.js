@@ -44,16 +44,19 @@ $(function() {
   var limit = ($(".references .cards .card").length - 3) * cardWidth
   var step = 0;
   console.log("loaded")
-  $('.next-reference').on("click", function() {
+  $('body').on('click', '.next-reference', function () {
     if (!(Math.abs(left - cardWidth) > limit)) {
       step += 1
       left -= cardWidth
       $(".references .cards .card").css("left", left + "%")
       $('.previous-reference').css('opacity', 1);
     }
+  });
+  $('.next-reference').on("click", function() {
+
   })
 
-  $('.previous-reference').on("click", function() {
+  $('body').on('click', '.previous-reference', function () {
     if (left < 0) {
       step -= 1
       left += cardWidth
