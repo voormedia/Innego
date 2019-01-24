@@ -30,7 +30,7 @@
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
 
-  = partial "layouts/base/nav", :locals => {:position => "fixed transparent"}
+  -# = partial "layouts/base/nav", :locals => {:position => "fixed transparent"}em
   %body
     = yield
-    = partial "layouts/base/nav", :locals => {:position => "footer"}
+    -# = partial "layouts/base/nav", :locals => {:position => "footer"}

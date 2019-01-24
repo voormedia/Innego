@@ -1,10 +1,11 @@
 section.contact {
-  padding: 3.8rem 0;
+  padding: 1.8rem 0;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   @media (min-width: $desktop) {
-    padding-top: 13.8rem;
+    padding-top: 20rem;
     padding-bottom: 12.5rem;
   }
   .overlay {
@@ -35,8 +36,8 @@ section.contact {
         flex-direction: column;
 
         .company-details {
-          max-width: 23rem;
-          margin-right: 3rem;
+          max-width: 25rem;
+          margin-right: 4rem;
           box-sizing: border-box;
           .company {
             font-family: "Museo700";
