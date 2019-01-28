@@ -24,6 +24,7 @@ section.contact {
 
     .contact-details {
       padding: 3rem 3.4rem;
+      width: 100%;
       @media (min-width: $desktop) {
         padding: 5rem 6.4rem;
       }
@@ -76,7 +77,7 @@ section.contact {
           min-height: 22.2rem;
           background-color: #FFFFFF;
           box-shadow: 0.6rem 0.6rem 2.4rem 0 rgba(0,0,0,0.16);
-          margin-top: 3rem;
+          // margin-top: 3rem;
           .linkedin-details {
             display: flex;
             padding: 2.9rem 2.5rem;
@@ -167,7 +168,7 @@ section.contact {
     .contact-container {
       flex-direction: row;
       .contact-details {
-        width: 60%;
+        width: 100%;
       }
       .contact-form {
         width: 40%;
