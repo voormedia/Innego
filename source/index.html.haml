@@ -83,7 +83,9 @@
         %h3= data.contact.title
         .details
           .company-details
-            %p.company= data.contact["company-name"]
+            -# %p.company= data.contact["company-name"]
+            %img.company-logo{src: data.contact["company-logo"].sub("/source", "")}
+            %a.company-link{:href => "http://arvgroup.com"}http://arvgroup.com
             %p.address= data.contact["company-address"]
             .phone
               %span{class: "fas fa-phone"}

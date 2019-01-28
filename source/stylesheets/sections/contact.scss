@@ -31,6 +31,14 @@ section.contact {
       h3 {
         font-size: 2.6rem;
       }
+      .company-logo {
+        display: block;
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+      .company-link {
+        color:#184D7A;
+      }
       .details {
         display: flex;
         justify-content: space-between;
